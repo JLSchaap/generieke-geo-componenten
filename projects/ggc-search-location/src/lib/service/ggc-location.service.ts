@@ -15,9 +15,9 @@ import { fromLonLat } from "ol/proj";
 import {
   defs,
   ObservableMapWrapper
-} from "@kadaster/generieke-geo-componenten-map";
+} from "@kadaster/ggc-map";
 import { GgcSearchLocationConnectService } from "./connect.service";
-import { DEFAULT_MAPINDEX } from "@kadaster/generieke-geo-componenten-models";
+import { DEFAULT_MAPINDEX } from "@kadaster/ggc-models";
 
 const proj4 = (proj4x as any).default;
 

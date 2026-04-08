@@ -38,7 +38,7 @@ import {
 import { PdokLocationApiService } from "../service/pdok-location-api.service";
 import { SearchLocationOptions } from "../model/search-location-options.model";
 import { GgcSearchLocationConnectService } from "../service/connect.service";
-import { FormatType } from "@kadaster/generieke-geo-componenten-map";
+import { FormatType } from "@kadaster/ggc-map";
 
 const BTN_SUFFIX = "btn-form-icon";
 

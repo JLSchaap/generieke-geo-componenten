@@ -1,12 +1,12 @@
 {
-  "name": "@kadaster/generieke-geo-componenten-search-location",
+  "name": "@kadaster/ggc-search-location",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^21.0.0",
     "@angular/core": "^21.0.0"
   },
   "dependencies": {
-    "@kadaster/generieke-geo-componenten-models": ">=0",
+    "@kadaster/ggc-models": ">=0",
     "tslib": "^2.3.0"
   },
   "publishConfig": {

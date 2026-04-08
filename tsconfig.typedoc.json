@@ -3,10 +3,13 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@kadaster/generieke-geo-componenten-models": [
+      "@kadaster/ggc-map": [
+        "projects/ggc-map/src/public-api.ts"
+      ],
+      "@kadaster/ggc-models": [
         "projects/ggc-models/src/public-api.ts"
       ],
-      "@kadaster/generieke-geo-componenten-search-location": [
+      "@kadaster/ggc-search-location": [
         "projects/ggc-search-location/src/public-api.ts"
       ]
     }

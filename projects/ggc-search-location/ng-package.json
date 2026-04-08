@@ -16,5 +16,5 @@
       "output": "."
     }
   ],
-  "allowedNonPeerDependencies": ["@kadaster/generieke-geo-componenten-models"]
+  "allowedNonPeerDependencies": ["@kadaster/ggc-models"]
 }
