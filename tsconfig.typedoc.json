@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@kadaster/generieke-geo-componenten-models": [
+        "projects/ggc-models/src/public-api.ts"
+      ],
+      "@kadaster/generieke-geo-componenten-search-location": [
+        "projects/ggc-search-location/src/public-api.ts"
+      ]
+    }
+  },
+  "include": ["projects/**/*.ts"],
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.d.ts",
+    "projects/library-app/**/*",
+    "src/**/*",
+    "dist/**/*",
+    "out-tsc/**/*",
+    "node_modules/**/*"
+  ]
+}
