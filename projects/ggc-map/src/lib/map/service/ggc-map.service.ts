@@ -21,10 +21,7 @@ import { ZoomOptions } from "./ZoomOptions.model";
 import { GeoJSON } from "ol/format";
 import { FormatType } from "../../enum/format-type";
 import { Observable } from "rxjs";
-import {
-  DEFAULT_MAPINDEX,
-  LayerChangedEvent
-} from "@kadaster/ggc-models";
+import { DEFAULT_MAPINDEX, LayerChangedEvent } from "@kadaster/ggc-models";
 
 @Injectable({
   providedIn: "root"

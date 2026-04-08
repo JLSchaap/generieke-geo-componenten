@@ -12,10 +12,7 @@ import Style from "ol/style/Style";
 import * as proj4x from "proj4";
 import { Observable, Subject, Subscription } from "rxjs";
 import { fromLonLat } from "ol/proj";
-import {
-  defs,
-  ObservableMapWrapper
-} from "@kadaster/ggc-map";
+import { defs, ObservableMapWrapper } from "@kadaster/ggc-map";
 import { GgcSearchLocationConnectService } from "./connect.service";
 import { DEFAULT_MAPINDEX } from "@kadaster/ggc-models";
 
