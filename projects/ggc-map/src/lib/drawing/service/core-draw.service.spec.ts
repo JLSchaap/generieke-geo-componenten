@@ -4,7 +4,7 @@ import { EventsKey } from "ol/events";
 import { Circle } from "ol/style";
 import Style, { StyleFunction } from "ol/style/Style";
 import { Type } from "ol/geom/Geometry";
-import { Geometry, LineString, Point, Polygon} from "ol/geom";
+import { Geometry, LineString, Point, Polygon } from "ol/geom";
 import { Draw, Modify, Snap, Translate } from "ol/interaction";
 import { DrawEvent, GeometryFunction } from "ol/interaction/Draw";
 import VectorLayer from "ol/layer/Vector";
@@ -1053,15 +1053,15 @@ export const customFinishDrawStyle: StyleFunction = (
   styles.set("Polygon", [
     new Style({
       fill: new Fill({
-        color: [200, 200, 200, 0.5],
-      }),
+        color: [200, 200, 200, 0.5]
+      })
     }),
     new Style({
       stroke: new Stroke({
         color: "#424447",
-        width,
-      }),
-    }),
+        width
+      })
+    })
   ]);
   styles.set("MultiPolygon", styles.get("Polygon"));
 
@@ -1069,15 +1069,15 @@ export const customFinishDrawStyle: StyleFunction = (
     new Style({
       stroke: new Stroke({
         color: "white",
-        width: width + 2,
-      }),
+        width: width + 2
+      })
     }),
     new Style({
       stroke: new Stroke({
         color: "green",
-        width,
-      }),
-    }),
+        width
+      })
+    })
   ]);
   styles.set("MultiLineString", styles.get("LineString"));
 
@@ -1086,29 +1086,29 @@ export const customFinishDrawStyle: StyleFunction = (
       image: new Circle({
         radius: width * 2,
         fill: new Fill({
-          color: "green",
+          color: "green"
         }),
         stroke: new Stroke({
           color: "white",
-          width: width / 2,
-        }),
+          width: width / 2
+        })
       }),
-      zIndex: Infinity,
-    }),
+      zIndex: Infinity
+    })
   ]);
   styles.set("MultiPoint", styles.get("Point"));
   styles.set("GeometryCollection", [
     ...(styles.get("Polygon") as Style[]),
     ...(styles.get("LineString") as Style[]),
-    ...(styles.get("Point") as Style[]),
+    ...(styles.get("Point") as Style[])
   ]);
 
   const fill = new Fill({
-    color: "white",
+    color: "white"
   });
   const stroke = new Stroke({
     color: "blue",
-    width: 1.25,
+    width: 1.25
   });
 
   styles.set("Circle", [
@@ -1116,11 +1116,11 @@ export const customFinishDrawStyle: StyleFunction = (
       image: new Circle({
         fill,
         stroke,
-        radius: 5,
+        radius: 5
       }),
       fill,
-      stroke,
-    }),
+      stroke
+    })
   ]);
 
   const type = feature.getGeometry()?.getType();
@@ -1138,15 +1138,15 @@ export const customDrawStyle: StyleFunction = (
   styles.set("Polygon", [
     new Style({
       fill: new Fill({
-        color: [255, 255, 255, 0.5],
-      }),
+        color: [255, 255, 255, 0.5]
+      })
     }),
     new Style({
       stroke: new Stroke({
         color: "#008296",
-        width: width + 2,
-      }),
-    }),
+        width: width + 2
+      })
+    })
   ]);
   styles.set("MultiPolygon", styles.get("Polygon"));
 
@@ -1154,15 +1154,15 @@ export const customDrawStyle: StyleFunction = (
     new Style({
       stroke: new Stroke({
         color: "#008296",
-        width: width + 2,
-      }),
+        width: width + 2
+      })
     }),
     new Style({
       stroke: new Stroke({
         color: "#008296",
-        width,
-      }),
-    }),
+        width
+      })
+    })
   ]);
   styles.set("MultiLineString", styles.get("LineString"));
 
@@ -1171,24 +1171,24 @@ export const customDrawStyle: StyleFunction = (
       image: new Circle({
         radius: width * 2,
         fill: new Fill({
-          color: "red",
+          color: "red"
         }),
         stroke: new Stroke({
           color: "white",
-          width: width / 2,
-        }),
+          width: width / 2
+        })
       }),
-      zIndex: Infinity,
-    }),
+      zIndex: Infinity
+    })
   ]);
   styles.set("MultiPoint", styles.get("Point"));
 
   const fill = new Fill({
-    color: "red",
+    color: "red"
   });
   const stroke = new Stroke({
     color: "red",
-    width: 1.25,
+    width: 1.25
   });
 
   styles.set("Circle", [
@@ -1196,11 +1196,11 @@ export const customDrawStyle: StyleFunction = (
       image: new Circle({
         fill,
         stroke,
-        radius: 5,
+        radius: 5
       }),
       fill,
-      stroke,
-    }),
+      stroke
+    })
   ]);
 
   const type = feature.getGeometry()?.getType();
