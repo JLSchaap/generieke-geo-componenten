@@ -43,7 +43,7 @@
     "lint:ggc-feature-info": "ng lint --project ggc-feature-info",
     "lint:ggc-dataset-tree": "ng lint --project ggc-dataset-tree",
     "lint:ggc-dataset-legend": "ng lint --project ggc-legend",
-    "lint:ggc-map": "ng lint --project ggc-map && npm run lint:ggc-toolbar",
+    "lint:ggc-map": "ng lint --project ggc-map",
     "lint:ggc-models": "ng lint --project ggc-models",
     "lint:ggc-print": "ng lint --project ggc-print",
     "lint:ggc-map-feedback": "ng lint --project ggc-map-feedback",
