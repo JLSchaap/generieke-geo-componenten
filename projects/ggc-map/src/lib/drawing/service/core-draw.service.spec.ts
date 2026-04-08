@@ -1,16 +1,15 @@
 import { TestBed } from "@angular/core/testing";
 import { Feature } from "ol";
 import { EventsKey } from "ol/events";
-import { Geometry, LineString, Point, Polygon } from "ol/geom";
+import { Circle } from "ol/style";
+import Style, { StyleFunction } from "ol/style/Style";
+import { Type } from "ol/geom/Geometry";
+import { Geometry, LineString, Point, Polygon} from "ol/geom";
 import { Draw, Modify, Snap, Translate } from "ol/interaction";
 import { DrawEvent, GeometryFunction } from "ol/interaction/Draw";
 import VectorLayer from "ol/layer/Vector";
 import OlMap from "ol/Map";
 import VectorSource from "ol/source/Vector";
-import {
-  customDrawStyle,
-  customFinishDrawStyle
-} from "../../../../../../src/app/map/map-draw-measure/draw-styles";
 import { CoreMapService } from "../../map/service/core-map.service";
 import {
   DrawInteractionEventTypes,
@@ -21,13 +20,15 @@ import { MapComponentEventTypes } from "../../model/map-component-event.model";
 import { ModifyInteractionEventTypes } from "../../model/modify-interaction-event.model";
 
 import { CoreDrawService } from "./core-draw.service";
-import Style from "ol/style/Style";
 import { CoreDrawLayerService } from "./core-draw-layer.service";
 import { CoreSnapService } from "./core-snap.service";
 import { CenterDraw } from "../center-draw";
 import { Coordinate } from "ol/coordinate";
 import createSpyObj = jasmine.createSpyObj;
 import Spy = jasmine.Spy;
+import Stroke from "ol/style/Stroke";
+import Fill from "ol/style/Fill";
+import RenderFeature from "ol/render/Feature";
 
 describe("CoreDrawService", () => {
   const mapIndex = "TEST_MAP";
@@ -1042,6 +1043,171 @@ function createVectorLayer(): VectorLayer<VectorSource<Feature<Geometry>>> {
     source: new VectorSource()
   });
 }
+
+export const customFinishDrawStyle: StyleFunction = (
+  feature: Feature<Geometry> | RenderFeature
+): Style | Style[] | void => {
+  const width = 1;
+  const styles: Map<Type, Style[] | undefined> = new Map();
+
+  styles.set("Polygon", [
+    new Style({
+      fill: new Fill({
+        color: [200, 200, 200, 0.5],
+      }),
+    }),
+    new Style({
+      stroke: new Stroke({
+        color: "#424447",
+        width,
+      }),
+    }),
+  ]);
+  styles.set("MultiPolygon", styles.get("Polygon"));
+
+  styles.set("LineString", [
+    new Style({
+      stroke: new Stroke({
+        color: "white",
+        width: width + 2,
+      }),
+    }),
+    new Style({
+      stroke: new Stroke({
+        color: "green",
+        width,
+      }),
+    }),
+  ]);
+  styles.set("MultiLineString", styles.get("LineString"));
+
+  styles.set("Point", [
+    new Style({
+      image: new Circle({
+        radius: width * 2,
+        fill: new Fill({
+          color: "green",
+        }),
+        stroke: new Stroke({
+          color: "white",
+          width: width / 2,
+        }),
+      }),
+      zIndex: Infinity,
+    }),
+  ]);
+  styles.set("MultiPoint", styles.get("Point"));
+  styles.set("GeometryCollection", [
+    ...(styles.get("Polygon") as Style[]),
+    ...(styles.get("LineString") as Style[]),
+    ...(styles.get("Point") as Style[]),
+  ]);
+
+  const fill = new Fill({
+    color: "white",
+  });
+  const stroke = new Stroke({
+    color: "blue",
+    width: 1.25,
+  });
+
+  styles.set("Circle", [
+    new Style({
+      image: new Circle({
+        fill,
+        stroke,
+        radius: 5,
+      }),
+      fill,
+      stroke,
+    }),
+  ]);
+
+  const type = feature.getGeometry()?.getType();
+  if (type) {
+    return styles.get(type);
+  }
+};
+
+export const customDrawStyle: StyleFunction = (
+  feature: Feature<Geometry> | RenderFeature
+) => {
+  const width = 3;
+  const styles: Map<Type, Style[] | undefined> = new Map();
+
+  styles.set("Polygon", [
+    new Style({
+      fill: new Fill({
+        color: [255, 255, 255, 0.5],
+      }),
+    }),
+    new Style({
+      stroke: new Stroke({
+        color: "#008296",
+        width: width + 2,
+      }),
+    }),
+  ]);
+  styles.set("MultiPolygon", styles.get("Polygon"));
+
+  styles.set("LineString", [
+    new Style({
+      stroke: new Stroke({
+        color: "#008296",
+        width: width + 2,
+      }),
+    }),
+    new Style({
+      stroke: new Stroke({
+        color: "#008296",
+        width,
+      }),
+    }),
+  ]);
+  styles.set("MultiLineString", styles.get("LineString"));
+
+  styles.set("Point", [
+    new Style({
+      image: new Circle({
+        radius: width * 2,
+        fill: new Fill({
+          color: "red",
+        }),
+        stroke: new Stroke({
+          color: "white",
+          width: width / 2,
+        }),
+      }),
+      zIndex: Infinity,
+    }),
+  ]);
+  styles.set("MultiPoint", styles.get("Point"));
+
+  const fill = new Fill({
+    color: "red",
+  });
+  const stroke = new Stroke({
+    color: "red",
+    width: 1.25,
+  });
+
+  styles.set("Circle", [
+    new Style({
+      image: new Circle({
+        fill,
+        stroke,
+        radius: 5,
+      }),
+      fill,
+      stroke,
+    }),
+  ]);
+
+  const type = feature.getGeometry()?.getType();
+  if (type) {
+    return styles.get(type);
+  }
+};
 
 function createStyleLikeMap(): StyleLikeMap {
   return {
