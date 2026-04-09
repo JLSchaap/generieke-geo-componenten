@@ -41,7 +41,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://registry.npmjs.org'
           cache: 'npm'
-      - run: npm ci --verbose --timing
+      - run: npm ci
       - name: Bump versions
         env:
           VERSION_BUMP: ${{ github.event.inputs.version_bump }}
@@ -50,7 +50,6 @@ jobs:
           GGC_MODELS: ${{ github.event.inputs.ggc_models }}
         run: |
           set -e
-
 
           bump_and_tag() {
             PROJECT=$1
@@ -73,7 +72,6 @@ jobs:
 
             cd -
           }
-
 
           if [ "$GGC_MAP" = "true" ]; then
             bump_and_tag "ggc-map"
