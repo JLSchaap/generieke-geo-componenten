@@ -1,9 +1,6 @@
 /*
  * Public API Surface of ggc-map
  */
-/*
- * Public API Surface of ggc-map
- */
 
 export * from "./lib/map/service/ggc-map.service";
 export * from "./lib/map/service/ggc-map-events.service";
