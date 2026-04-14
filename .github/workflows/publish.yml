@@ -51,7 +51,7 @@ jobs:
         run: |
           set -e
 
-          bump_and_tag() {
+          bump() {
             PROJECT=$1
 
             echo "📦 Bumping $PROJECT ($VERSION_BUMP)"
@@ -60,6 +60,42 @@ jobs:
 
             # bump version
             npm version "$VERSION_BUMP" --no-git-tag-version
+
+            cd -
+          }
+
+          if [ "$GGC_MAP" = "true" ]; then
+            bump "ggc-map"
+          fi
+
+          if [ "$GGC_SEARCH_LOCATION" = "true" ]; then
+            bump "ggc-search-location"
+          fi
+
+          if [ "$GGC_MODELS" = "true" ]; then
+            bump "ggc-models"
+          fi
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add projects/**/package.json
+          git commit -m "chore: bump package versions (${{ github.event.inputs.version_bump }})" || echo "Nothing to commit"
+
+      - name: Tag versions
+        env:
+          GGC_MAP: ${{ github.event.inputs.ggc_map }}
+          GGC_SEARCH_LOCATION: ${{ github.event.inputs.ggc_search_location }}
+          GGC_MODELS: ${{ github.event.inputs.ggc_models }}
+        run: |
+          set -e
+
+          tag() {
+            PROJECT=$1
+
+            cd "projects/$PROJECT"
 
             # read name + version from package.json
             PACKAGE_NAME=$(node -p "require('./package.json').name")
@@ -74,24 +110,16 @@ jobs:
           }
 
           if [ "$GGC_MAP" = "true" ]; then
-            bump_and_tag "ggc-map"
+            tag "ggc-map"
           fi
 
           if [ "$GGC_SEARCH_LOCATION" = "true" ]; then
-            bump_and_tag "ggc-search-location"
+            tag "ggc-search-location"
           fi
 
           if [ "$GGC_MODELS" = "true" ]; then
-            bump_and_tag "ggc-models"
+            tag "ggc-models"
           fi
-
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-
-          git add projects/**/package.json
-          git commit -m "chore: bump package versions (${{ github.event.inputs.version_bump }})" || echo "Nothing to commit"
 
       - name: Push commits and tags
         uses: ad-m/github-push-action@v1.0.0
