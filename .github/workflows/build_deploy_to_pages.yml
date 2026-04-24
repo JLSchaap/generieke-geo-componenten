@@ -28,7 +28,7 @@ jobs:
 
       - name: Build Angular app
         run: |
-          npm run build:all -- --configuration production \
+          npm run build ggc-home -- --configuration production \
             --base-href /generieke-geo-componenten/
 
       - name: Deploy to GitHub Pages branch_build
