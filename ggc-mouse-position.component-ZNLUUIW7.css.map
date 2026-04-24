@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-map/src/lib/mouse-position/ggc-mouse-position.component.css"],
+  "sourcesContent": ["/*unset styling when ol-mouse-position is added within mapDetailsContainer*/\n::ng-deep .ggc-mouse-position .ol-mouse-position {\n  position: unset;\n  top: unset;\n  right: unset;\n}\n"],
+  "mappings": "AACA,UAAU,CAAC,mBAAmB,CAAC,kBAC7B,SAAU,MACV,IAAK,MACL,MAAO,KACT",
+  "names": []
+}

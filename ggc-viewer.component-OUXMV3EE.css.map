@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-cesium/src/lib/viewer/ggc-viewer.component.scss"],
+  "sourcesContent": ["::ng-deep .cesium-widget {\n  position: absolute;\n}\n\n.scale-viewer {\n  position: relative;\n  height: 100%;\n  width: 100%;\n}\n\n::ng-deep .cesium-viewer .cesium-widget-credits {\n  display: var(--displayLogo);\n}\n"],
+  "mappings": "AAAA,UAAA,CAAA,cACE,SAAA,SAGF,CAAA,aACE,SAAA,SACA,OAAA,KACA,MAAA,KAGF,UAAA,CAAA,cAAA,CAAA,sBACE,QAAA,IAAA",
+  "names": []
+}

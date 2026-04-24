@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-home/src/app/examples/example-dataset-switcher/example-dataset-switcher-radio-buttons/example-dataset-switcher-radio-buttons.component.scss"],
+  "sourcesContent": [".map-container {\n  align-items: stretch;\n  display: flex;\n  height: 100%;\n  justify-content: stretch;\n  min-height: 80vh;\n  position: relative;\n  width: 100%;\n\n  & > * {\n    flex-basis: 100%;\n    flex-grow: 1;\n  }\n}\n\nggc-dataset-switcher ::ng-deep .ggc-ds-switcher-label {\n  display: block;\n  border-radius: 5px;\n  border: solid 2px black;\n  margin-left: 2.5rem;\n}\n\nggc-dataset-switcher ::ng-deep .ggc-ds-switcher-label-img {\n  display: none;\n  height: 150px;\n  width: 150px;\n  margin: 0;\n}\n\nggc-dataset-switcher ::ng-deep .ggc-ds-switcher-radio-button {\n  top: unset;\n  width: 24px;\n  height: 24px;\n  margin-top: 16px;\n}\n\nggc-dataset-switcher ::ng-deep .ggc-ds-switcher-radio-button:first-child {\n  margin-top: 26px;\n}\n\nggc-dataset-switcher ::ng-deep .ggc-ds-switcher-label-txt {\n  font-size: 1rem;\n}\n"],
+  "mappings": "AAAA,CAAA,cACE,YAAA,QACA,QAAA,KACA,OAAA,KACA,gBAAA,QACA,WAAA,KACA,SAAA,SACA,MAAA,KAEA,CATF,aASE,CAAA,EACE,WAAA,KACA,UAAA,EAIJ,qBAAA,UAAA,CAAA,sBACE,QAAA,MAhBF,cAiBE,IACA,OAAA,MAAA,IAAA,MACA,YAAA,OAGF,qBAAA,UAAA,CAAA,0BACE,QAAA,KACA,OAAA,MACA,MAAA,MAzBF,OA0BE,EAGF,qBAAA,UAAA,CAAA,6BACE,IAAA,MACA,MAAA,KACA,OAAA,KACA,WAAA,KAGF,qBAAA,UAAA,CAPA,4BAOA,aACE,WAAA,KAGF,qBAAA,UAAA,CAAA,0BACE,UAAA",
+  "names": []
+}

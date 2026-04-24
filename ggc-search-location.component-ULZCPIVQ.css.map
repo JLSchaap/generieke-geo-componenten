@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-search-location/src/lib/search-location/ggc-search-location.component.scss"],
+  "sourcesContent": [".list-group-item:hover {\n  cursor: pointer;\n}\n\n.list-group:focus {\n  .cdk-option-active {\n    outline: 2px solid black;\n    z-index: 1000;\n  }\n}\n\n.list-group {\n  .btn {\n    //Same as kadaster-huisstijl. Fixes alignment for non-huisstijl users\n    align-items: center;\n    display: inline-flex;\n    text-align: center;\n  }\n}\n\n.form-control .fa-spin {\n  margin-left: 5px;\n}\n\nspan.collectionType {\n  float: right;\n  color: gray;\n  font-size: 0.8em;\n  font-weight: bold;\n  text-transform: uppercase;\n  margin-top: 0.2rem;\n}\n"],
+  "mappings": "AAAA,CAAA,eAAA,OACE,OAAA,QAIA,CAAA,UAAA,OAAA,CAAA,kBACE,QAAA,IAAA,MAAA,MACA,QAAA,KAKF,CAPA,WAOA,CAAA,IAEE,YAAA,OACA,QAAA,YACA,WAAA,OAIJ,CAAA,aAAA,CAAA,QACE,YAAA,IAGF,IAAA,CAAA,eACE,MAAA,MACA,MAAA,KACA,UAAA,KACA,YAAA,IACA,eAAA,UACA,WAAA",
+  "names": []
+}

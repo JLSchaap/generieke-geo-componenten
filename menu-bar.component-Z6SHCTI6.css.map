@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-home/src/app/menu-bar/menu-bar.component.scss"],
+  "sourcesContent": ["[ngMenuBar]:has(:focus-visible) {\n  outline: 1px solid var(--nl-link-color);\n}\n\n[ngMenuBar] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: flex-end;\n  gap: 0.25rem;\n  padding: 0.25rem;\n  background-color: var(--ggc-nav-bar-background-color);\n}\n\n[ngMenu] {\n  margin: 0;\n  width: 15rem;\n  padding: 0.25rem;\n  border: 1px solid var(--nl-link-color);\n  background-color: var(--ggc-nav-bar-background-color);\n}\n[ngMenu][data-visible=\"false\"] {\n  display: none;\n}\n[ngMenuItem] {\n  outline: none;\n  display: flex;\n  cursor: pointer;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.5rem;\n}\n\n[ngMenuItem]:focus,\n[ngMenuItem]:hover {\n  outline: 2px solid var(--nl-link-color);\n}\n[ngMenuItem] .icon {\n  opacity: 0.875;\n  font-size: 1.25rem;\n}\n[ngMenuItem] .label {\n  flex: 1;\n  opacity: 0.875;\n}\n[ngMenuItem]:not([aria-expanded=\"true\"]) .arrow {\n  opacity: 0.5;\n}\n"],
+  "mappings": "AAAA,CAAA,UAAA,KAAA,gBACE,QAAA,IAAA,MAAA,IAAA,iBAGF,CAAA,WACE,QAAA,KACA,UAAA,KACA,gBAAA,SACA,IAAA,OARF,QASE,OACA,iBAAA,IAAA,gCAGF,CAAA,QAbA,OAcE,EACA,MAAA,MAfF,QAgBE,OACA,OAAA,IAAA,MAAA,IAAA,iBACA,iBAAA,IAAA,gCAEF,CAAA,OAAA,CAAA,oBACE,QAAA,KAEF,CAAA,YACE,QAAA,KACA,QAAA,KACA,OAAA,QACA,YAAA,OACA,IAAA,MA5BF,QA6BE,MAGF,CAAA,WAAA,OAAA,CAAA,WAAA,OAEE,QAAA,IAAA,MAAA,IAAA,iBAEF,CAAA,YAAA,CAAA,KACE,QAAA,KACA,UAAA,QAEF,CAAA,YAAA,CAAA,MACE,KAAA,EACA,QAAA,KAEF,CAAA,WAAA,KAAA,CAAA,qBAAA,CAAA,MACE,QAAA",
+  "names": []
+}

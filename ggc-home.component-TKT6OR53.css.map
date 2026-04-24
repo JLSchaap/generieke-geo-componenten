@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-home/src/app/ggc-home/ggc-home.component.scss"],
+  "sourcesContent": [".card-wrapper {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));\n  gap: 16px;\n  max-inline-size: 1360px;\n  margin-inline: auto;\n  block-size: 100%;\n  padding: 0 16px 16px 16px;\n}\n"],
+  "mappings": "AAAA,CAAA,aACE,QAAA,KACA,sBAAA,OAAA,QAAA,CAAA,OAAA,IAAA,IAAA,CAAA,MAAA,CAAA,MACA,IAAA,KACA,gBAAA,OACA,cAAA,KACA,WAAA,KANF,QAOE,EAAA,KAAA",
+  "names": []
+}

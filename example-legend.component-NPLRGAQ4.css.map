@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-home/src/app/examples/example-legend/example-legend.component.scss"],
+  "sourcesContent": [".map-container {\n  align-items: stretch;\n  display: flex;\n  height: 100%;\n  justify-content: stretch;\n  min-height: 80vh;\n  position: relative;\n  width: 100%;\n\n  & > * {\n    flex-basis: 100%;\n    flex-grow: 1;\n  }\n}\n.legend-container {\n  border: gray 1px solid;\n  padding: 5px;\n  text-align: left;\n}\n.btn {\n  margin: 3px;\n}\n\n:host ::ng-deep .legend-container .ggc-dl-dataset-name {\n  text-align: left;\n  justify-content: flex-start;\n  width: 100%;\n}\n"],
+  "mappings": "AAAA,CAAA,cACE,YAAA,QACA,QAAA,KACA,OAAA,KACA,gBAAA,QACA,WAAA,KACA,SAAA,SACA,MAAA,KAEA,CATF,aASE,CAAA,EACE,WAAA,KACA,UAAA,EAGJ,CAAA,iBACE,OAAA,KAAA,IAAA,MAfF,QAgBE,IACA,WAAA,KAEF,CAAA,IAnBA,OAoBE,IAGF,MAAA,UAAA,CATA,iBASA,CAAA,oBACE,WAAA,KACA,gBAAA,WACA,MAAA",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-dataset-tree/src/lib/dataset-tree/layer-toggle/layer-toggle.component.scss"],
+  "sourcesContent": [".ggc-dt-ls-layer-title {\n  padding-left: 5px;\n}\n\n.ggc-dt-layer-disabled {\n  color: darkgrey;\n  cursor: not-allowed;\n\n  .fas {\n    color: darkgrey;\n  }\n}\n"],
+  "mappings": "AAAA,CAAA,sBACE,aAAA,IAGF,CAAA,sBACE,MAAA,QACA,OAAA,YAEA,CAJF,sBAIE,CAAA,IACE,MAAA",
+  "names": []
+}

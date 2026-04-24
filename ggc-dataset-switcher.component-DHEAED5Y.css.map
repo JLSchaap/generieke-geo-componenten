@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-dataset-tree/src/lib/dataset-switcher/ggc-dataset-switcher.component.css"],
+  "sourcesContent": ["[type=\"radio\"] {\n  position: absolute;\n  top: -20px;\n}\n\n.ggc-ds-switcher-label {\n  cursor: pointer;\n  margin: 10px;\n  padding: 10px;\n}\n\n.ggc-ds-switcher-label-img {\n  height: 150px;\n  width: 150px;\n  margin: 10px;\n}\n\ninput[type=\"radio\"]:checked + .ggc-ds-switcher-label {\n  box-shadow: 0 0 4px 4px #307cb3;\n}\n\ninput[type=\"radio\"]:focus + .ggc-ds-switcher-label {\n  box-shadow: 0 0 6px 6px #307cb3;\n}\n\ninput[type=\"radio\"] + .ggc-ds-switcher-label:hover {\n  box-shadow: 0 0 6px 6px #307cb3;\n}\n\n.ggc-ds-switcher-radio-container {\n  position: relative;\n  overflow: hidden;\n}\n\nggc-ds-switcher-label:focus,\nggc-ds-switcher-label:checked {\n  box-shadow: 0 0 3px 2px #307cb3;\n}\n"],
+  "mappings": "AAAA,CAAC,YACC,SAAU,SACV,IAAK,KACP,CAEA,CAAC,sBACC,OAAQ,QANV,OAOU,KAPV,QAQW,IACX,CAEA,CAAC,0BACC,OAAQ,MACR,MAAO,MAbT,OAcU,IACV,CAEA,KAAK,CAAC,WAAa,QAAS,CAAE,CAZ7B,sBAaC,WAAY,EAAE,EAAE,IAAI,IAAI,OAC1B,CAEA,KAAK,CAAC,WAAa,MAAO,CAAE,CAhB3B,sBAiBC,WAAY,EAAE,EAAE,IAAI,IAAI,OAC1B,CAEA,KAAK,CAAC,WAAc,CAAE,CApBrB,qBAoB2C,OAC1C,WAAY,EAAE,EAAE,IAAI,IAAI,OAC1B,CAEA,CAAC,gCACC,SAAU,SACV,SAAU,MACZ,CAEA,qBAAqB,OACrB,qBAAqB,SACnB,WAAY,EAAE,EAAE,IAAI,IAAI,OAC1B",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-dataset-tree/src/lib/dataset-tree/layer-selector/layer-selector.component.scss"],
+  "sourcesContent": [".ggc-dt-btn-ls-active {\n  font-weight: bold;\n}\n\n.ggc-dt-layer-btn {\n  padding-left: 10px;\n}\n\ntable {\n  cursor: pointer;\n  .w-1 {\n    width: 1px;\n    padding-left: 5px;\n    padding-right: 5px;\n  }\n\n  .text-end {\n    text-align: right;\n  }\n\n  td[colspan=\"3\"] {\n    padding-left: 15px;\n  }\n}\n"],
+  "mappings": "AAAA,CAAA,qBACE,YAAA,IAGF,CAAA,iBACE,aAAA,KAGF,MACE,OAAA,QACA,MAAA,CAAA,IACE,MAAA,IACA,aAAA,IACA,cAAA,IAGF,MAAA,CAAA,SACE,WAAA,MAGF,MAAA,EAAA,CAAA,aACE,aAAA",
+  "names": []
+}

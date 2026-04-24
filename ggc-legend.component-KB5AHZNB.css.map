@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-legend/src/lib/legend/ggc-legend.component.css"],
+  "sourcesContent": ["button.ggc-dl-dataset-name {\n  background: none;\n  color: inherit;\n  border: none;\n  font: inherit;\n  cursor: pointer;\n}\n\n.ggc-dl-dataset-name {\n  font-weight: bold;\n}\n\n.ggc-dl-dataset-name[aria-expanded=\"true\"] > .ggc-dl-dataset-toggle-collapsed {\n  display: none;\n}\n\n.ggc-dl-dataset-name[aria-expanded=\"false\"] > .ggc-dl-dataset-toggle-expanded {\n  display: none;\n}\n"],
+  "mappings": "AAAA,MAAM,CAAC,oBACL,WAAY,KACZ,MAAO,QACP,OAAQ,KACR,KAAM,QACN,OAAQ,OACV,CAEA,CARO,oBASL,YAAa,GACf,CAEA,CAZO,mBAYa,CAAC,mBAAsB,CAAE,CAAC,gCAC5C,QAAS,IACX,CAEA,CAhBO,mBAgBa,CAAC,oBAAuB,CAAE,CAAC,+BAC7C,QAAS,IACX",
+  "names": []
+}

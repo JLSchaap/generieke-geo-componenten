@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-legend/src/lib/legend-icon/ggc-legend-icon.component.css"],
+  "sourcesContent": [".ggc-dl-iconlist {\n  margin: 3px;\n}\n\n.ggc-dl-iconlist-text {\n  margin-left: 10px;\n  display: inline-block;\n}\n\nul {\n  list-style: none;\n  padding-left: 0;\n  li:before {\n    content: none;\n  }\n}\n"],
+  "mappings": "AAAA,CAAC,gBAAD,OACU,GACV,CAEA,CAAC,qBACC,YAAa,KACb,QAAS,YACX,CAEA,GACE,WAAY,KACZ,aAAc,CAIhB,CANA,GAGE,EAAE,QACA,QAAS,IACX",
+  "names": []
+}

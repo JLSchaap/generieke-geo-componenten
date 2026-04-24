@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-toolbar/src/lib/toolbar/toolbar-item/ggc-toolbar-item.component.css"],
+  "sourcesContent": [".ggc-toolbar-content:has(> div.tab-content > div:empty) {\n  display: none;\n}\n"],
+  "mappings": "AAAA,CAAC,mBAAmB,KAAK,CAAE,GAAG,CAAC,WAAY,CAAE,GAAG,QAC9C,QAAS,IACX",
+  "names": []
+}

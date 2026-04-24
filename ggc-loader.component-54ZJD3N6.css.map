@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-map/src/lib/loader/ggc-loader.component.css"],
+  "sourcesContent": [".ggc-loader {\n  display: inline-flex;\n}\n"],
+  "mappings": "AAAA,CAAC,WACC,QAAS,WACX",
+  "names": []
+}

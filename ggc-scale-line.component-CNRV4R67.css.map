@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-map/src/lib/scale-line/ggc-scale-line.component.css"],
+  "sourcesContent": ["/*unset styling when scaleline is added within map-details-container*/\n::ng-deep .ggc-scale-line .ol-scale-line {\n  bottom: unset;\n  position: unset;\n}\n"],
+  "mappings": "AACA,UAAU,CAAC,eAAe,CAAC,cACzB,OAAQ,MACR,SAAU,KACZ",
+  "names": []
+}

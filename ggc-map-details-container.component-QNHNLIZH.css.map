@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-map/src/lib/map-details-container/ggc-map-details-container.component.css"],
+  "sourcesContent": [".ggc-map-details-container {\n  display: inline-block;\n}\n\n/* styling for child componenten of map-details-container*/\n::ng-deep .ggc-mouse-position,\n::ng-deep .ggc-scale-denominator,\n::ng-deep .ggc-scale-line,\n::ng-deep .ggc-zoom-level {\n  display: inline-block;\n  float: left;\n  position: relative;\n  margin-right: 10px;\n}\n"],
+  "mappings": "AAAA,CAAC,0BACC,QAAS,YACX,CAGA,UAAU,CAAC,mBACX,UAAU,CAAC,sBACX,UAAU,CAAC,eACX,UAAU,CAAC,eACT,QAAS,aACT,MAAO,KACP,SAAU,SACV,aAAc,IAChB",
+  "names": []
+}

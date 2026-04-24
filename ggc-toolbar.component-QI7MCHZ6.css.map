@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-toolbar/src/lib/toolbar/toolbar/ggc-toolbar.component.css"],
+  "sourcesContent": [".ggc-toolbar-items {\n  display: inline-block;\n}\n"],
+  "mappings": "AAAA,CAAC,kBACC,QAAS,YACX",
+  "names": []
+}

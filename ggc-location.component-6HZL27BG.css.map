@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-cesium/src/lib/location/ggc-location.component.scss"],
+  "sourcesContent": [".gc-controls {\n  .map-control {\n    display: flex;\n  }\n  .cesium-control > button {\n    border-radius: 0;\n    background: white;\n  }\n}\n"],
+  "mappings": "AACE,CAAA,YAAA,CAAA,YACE,QAAA,KAEF,CAHA,YAGA,CAAA,cAAA,CAAA,OAHA,cAIE,EACA,WAAA",
+  "names": []
+}

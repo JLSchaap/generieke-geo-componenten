@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-home/src/app/examples/example-layer/example-layer-advanced/example-layer-advanced.component.scss"],
+  "sourcesContent": [".map-container {\n  align-items: stretch;\n  display: flex;\n  height: 100%;\n  justify-content: stretch;\n  min-height: 80vh;\n  position: relative;\n  width: 100%;\n\n  & > * {\n    flex-basis: 100%;\n    flex-grow: 1;\n  }\n}\n\ninput {\n  margin: 0.4rem;\n}\n\nfieldset {\n  margin-bottom: 1rem;\n}\n"],
+  "mappings": "AAAA,CAAA,cACE,YAAA,QACA,QAAA,KACA,OAAA,KACA,gBAAA,QACA,WAAA,KACA,SAAA,SACA,MAAA,KAEA,CATF,aASE,CAAA,EACE,WAAA,KACA,UAAA,EAIJ,MAfA,OAgBE,MAGF,SACE,cAAA",
+  "names": []
+}

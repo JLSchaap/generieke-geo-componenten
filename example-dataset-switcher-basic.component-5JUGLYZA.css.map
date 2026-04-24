@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-home/src/app/examples/example-dataset-switcher/example-dataset-switcher-basic/example-dataset-switcher-basic.component.scss"],
+  "sourcesContent": [".map-container {\n  align-items: stretch;\n  display: flex;\n  height: 100%;\n  justify-content: stretch;\n  min-height: 80vh;\n  position: relative;\n  width: 100%;\n\n  & > * {\n    flex-basis: 100%;\n    flex-grow: 1;\n  }\n}\n\nggc-dataset-switcher ::ng-deep .ggc-ds-switcher-label {\n  overflow: hidden;\n  position: relative;\n  border-radius: 15px;\n  border: solid 2px black;\n}\n\nggc-dataset-switcher ::ng-deep .ggc-ds-switcher-label-img {\n  height: 150px;\n  width: 150px;\n  margin: 0;\n}\n\nggc-dataset-switcher ::ng-deep .ggc-ds-switcher-label-txt {\n  position: absolute;\n  font-size: 1rem;\n  width: 100%;\n  left: 0;\n  bottom: 0;\n  word-wrap: break-word;\n  text-align: center;\n  background-color: rgba(145, 144, 144, 0.75);\n  color: white;\n}\n"],
+  "mappings": "AAAA,CAAA,cACE,YAAA,QACA,QAAA,KACA,OAAA,KACA,gBAAA,QACA,WAAA,KACA,SAAA,SACA,MAAA,KAEA,CATF,aASE,CAAA,EACE,WAAA,KACA,UAAA,EAIJ,qBAAA,UAAA,CAAA,sBACE,SAAA,OACA,SAAA,SAjBF,cAkBE,KACA,OAAA,MAAA,IAAA,MAGF,qBAAA,UAAA,CAAA,0BACE,OAAA,MACA,MAAA,MAxBF,OAyBE,EAGF,qBAAA,UAAA,CAAA,0BACE,SAAA,SACA,UAAA,KACA,MAAA,KACA,KAAA,EACA,OAAA,EACA,UAAA,WACA,WAAA,OACA,iBAAA,UACA,MAAA",
+  "names": []
+}

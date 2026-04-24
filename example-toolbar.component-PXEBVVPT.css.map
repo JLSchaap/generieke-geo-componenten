@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["projects/ggc-home/src/app/examples/example-toolbar/example-toolbar/example-toolbar.component.scss"],
+  "sourcesContent": [".map-container {\n  align-items: stretch;\n  display: flex;\n  height: 100%;\n  justify-content: stretch;\n  min-height: 80vh;\n  position: relative;\n  width: 100%;\n\n  & > * {\n    flex-basis: 100%;\n    flex-grow: 1;\n  }\n}\n\nggc-toolbar-item::ng-deep {\n  button {\n    &:hover,\n    &:active,\n    &:focus {\n      border: 1px solid black;\n    }\n  }\n}\n\nggc-toolbar-item-draw ::ng-deep,\nggc-toolbar-item-measure::ng-deep {\n  ul {\n    padding-left: 0;\n    margin-bottom: 0;\n  }\n  button {\n    &:hover,\n    &:active,\n    &:focus {\n      border: 1px solid black;\n    }\n  }\n}\n"],
+  "mappings": "AAAA,CAAA,cACE,YAAA,QACA,QAAA,KACA,OAAA,KACA,gBAAA,QACA,WAAA,KACA,SAAA,SACA,MAAA,KAEA,CATF,aASE,CAAA,EACE,WAAA,KACA,UAAA,EAMA,gBAAA,UAAA,MAAA,OAAA,gBAAA,UAAA,MAAA,QAAA,gBAAA,UAAA,MAAA,OAGE,OAAA,IAAA,MAAA,MAOJ,sBAAA,UAAA,GAAA,wBAAA,UAAA,GACE,aAAA,EACA,cAAA,EAGA,sBAAA,UAAA,MAAA,OAAA,sBAAA,UAAA,MAAA,QAAA,sBAAA,UAAA,MAAA,OAAA,wBAAA,UAAA,MAAA,OAAA,wBAAA,UAAA,MAAA,QAAA,wBAAA,UAAA,MAAA,OAGE,OAAA,IAAA,MAAA",
+  "names": []
+}
